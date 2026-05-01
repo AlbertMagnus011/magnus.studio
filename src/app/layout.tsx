@@ -1,17 +1,23 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Cabin_Sketch, Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+const cabinSketch = Cabin_Sketch({
+  variable: "--font-cabin-sketch",
+  subsets: ["latin"],
+  weight: ["400", "700"]
+});
+
+const inter = Inter ({
+  variable: "--font-inter",
+  weight:["400","500","700"]
+})
 
 export const metadata: Metadata = {
   title: "Magnus Studio",
@@ -26,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={` ${geistMono.variable} ${cabinSketch.variable} ${inter.variable} antialiased`}
       >
         <Navbar></Navbar>
         {children}
