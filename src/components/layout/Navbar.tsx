@@ -11,7 +11,7 @@ export const Navbar = () => {
     return (
     <header className="sticky top-0 border-b border-[#d9f5df] bg-[#f6fff6] backdrop-blur-md">
         <nav className="container mx-auto flex h-20 items-center justify-between px-8 md:px-16">
-            <Link href="/" className=" flex font-cabin items-center text-[#444e4c] text-lg gap-2">
+            <Link href="/" className="flex font-cabin items-center text-[#444e4c] text-lg gap-2 mx-0">
                 <img src="/logo/coffe.png" alt="Logo" className="object-contain h-20 w-20"/>
                 <p className="text-2xl font-cabin font-bold">Magnus Studio</p>
             </Link>

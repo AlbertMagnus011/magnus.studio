@@ -1,10 +1,11 @@
+import { HomeTemplate } from "@/components/templates/HomeTemplate";
 
 export const Page = () => {
   return (
-    <main className="mx-auto">
-        
+    <main>
+        <HomeTemplate/>
     </main>
   )
 }
 
-export default Page;
+export default Page; 
