@@ -13,7 +13,7 @@ export const SkillsSection = () => {
           <div className="grid grid-cols-3 gap-5">
             {skills.map((item) => (
               <button
-                key={item.label}
+                key={item.id}
                 className={`group relative flex min-h-32.5 flex-col items-center justify-center gap-3 rounded-sm border-2 border-[#392a35]/20 bg-[#ffe66d] p-5 
                 shadow-[4px_4px_0px_rgba(57,42,53,0.18)] transition-all duration-300 cursor-pointer hover:-translate-y-2 hover:rotate-0 hover:shadow-[8px_8px_0px_rgba(57,42,53,0.18)]
                 ${item.rotate}`}>

@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 
 const text = "Desenvolvedor Front-End"
 
+// simula escrita manual usando width + cursor blink
 export const TypingSketch = () =>{
     return(
         <h1 className="font-cabin font-bold text-5xl leading-tight text-[#392a35] flex flex-wrap">
