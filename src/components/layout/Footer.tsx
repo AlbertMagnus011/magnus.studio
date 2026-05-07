@@ -3,6 +3,7 @@
 import arrow from "@/assets/icons/arrow.png"
 import Image from "next/image"
 import { motion } from "framer-motion"
+import Link from "next/link";
 
 const MotionImage = motion(Image);
 
@@ -17,10 +18,10 @@ export const Footer = () => {
     return(
         <footer className="w-full">
             <div className="container mx-auto flex flex-col md:flex-row md:items-center py-8 md:py-16 ">
-                <div className="flex justify-center md:justify-start items-center gap-4 md:basis-2/7 cursor-pointer">
+                <Link href={"/"} className="flex justify-center md:justify-start items-center gap-4 md:basis-2/7">
                     <Image src={"/logo/coffee.png"} alt={"Logo Marcos Studio"} width={55} height={55} />
                     <p className="font-cabin text-2xl">Marcos Studio</p>
-                </div>
+                </Link>
                 <div className="md:basis-3/7 flex justify-center">
                     <p className="text-center">© 2026 Marcos Silva. Todos os direitos reservados.</p>
                 </div>
