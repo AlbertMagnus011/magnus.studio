@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Cabin_Sketch, Inter } from "next/font/google";
+import { Geist_Mono, Cabin_Sketch, Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
+import { Toaster } from "sonner"
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -20,8 +21,12 @@ const inter = Inter ({
 })
 
 export const metadata: Metadata = {
-  title: "Magnus Studio",
-  description: "",
+  title: "Marcos Studio",
+  description: "Portfolio de Marcos Silva, desenvolvedor Front-End especializado em React, Next.js e TypeScript.",
+
+  icons: {
+    icon: "/logo/favicon.png"
+  }
 };
 
 export default function RootLayout({
@@ -30,12 +35,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <body
-        className={` ${geistMono.variable} ${cabinSketch.variable} ${inter.variable} antialiased`}
+        className={`${geistMono.variable} ${cabinSketch.variable} ${inter.variable} antialiased`}
       >
-        <Navbar></Navbar>
+        <Navbar/>
         {children}
+        <Toaster
+          position="top-center" richColors toastOptions={{
+            className:"!bg-[#fff8d6] !text-[#392a35] !border-2 !border-[#392a35] !rounded-2xl"
+          }}
+       />
       </body>
     </html>
   );

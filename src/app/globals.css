@@ -11,6 +11,7 @@
   --font-mono: var(--font-geist-mono);
   --font-cabin: var(--font-cabin-sketch);
   --font-sans: var(--font-inter);
+  --font-londrina: var(--font-londrina-sketch)
 }
 
 @media (prefers-color-scheme: dark) {

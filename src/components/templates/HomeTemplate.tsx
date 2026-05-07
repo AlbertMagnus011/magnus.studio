@@ -1,3 +1,4 @@
+import { Footer } from "../layout/Footer"
 import { ContactSection } from "../sections/ContactSection"
 import { HeroSection } from "../sections/HeroSection"
 import { ProjectsSection } from "../sections/ProjectsSection"
@@ -10,6 +11,7 @@ export const HomeTemplate = () => {
             <SkillsSection/>
             <ProjectsSection/>
             <ContactSection/>
+            <Footer></Footer>
         </>
     )
 }

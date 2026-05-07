@@ -1,6 +1,5 @@
 import { Resend } from "resend";
 import { contactSchema } from "@/schemas/contactSchema";
-import { error } from "console";
 
 const resend = new Resend(
     process.env.RESEND_API_KEY
@@ -20,7 +19,7 @@ export async function POST(req: Request) {
         const { name, email, message } = parsed.data;
         resend.emails.send({
             from: 'Magnus Studio <onboarding@resend.dev>',
-            to: 'minhaqueridaia@gmail.com',
+            to: 'contato.marcosssilva.dev@gmail.com',
             subject: `Contato portfolio - ${name}`,
             replyTo: email,
             html: `

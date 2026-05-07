@@ -6,6 +6,7 @@ import Image from "next/image"
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { contactSchema, ContactFormData } from "@/schemas/contactSchema"
+import { toast } from "sonner"
 
 export const ContactSection = () => {
 
@@ -21,17 +22,19 @@ export const ContactSection = () => {
         });
 
         if(res.ok) {
-            alert("Mensagem enviada!");
+            toast.success("Mensagem enviada com sucesso ✨");
             reset();
+        }else {
+            toast.error("Erro ao enviar mensagem")
         }
     }
 
     const copyEmail = async () => {
         try {
-            await navigator.clipboard.writeText("contato.marcosdasilva.dev@gmail.com")
-            alert("E-mail copiado!");
+            await navigator.clipboard.writeText("contato.marcosssilva.dev@gmail.com")
+            toast.success("E-mail copiado!");
         } catch (err) {
-            alert("Erro ao copiar.")
+            toast.error("Erro ao copiar.")
         }
     }
 
