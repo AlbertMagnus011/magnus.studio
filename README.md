@@ -4,7 +4,7 @@ Portfolio pessoal desenvolvido com React, Next.js e TypeScript, focado em aprese
 
 ## Preview
 
-![Marcos Studio Preview](./public/logo/preview.png)
+![Marcos Studio Preview](./public/preview.png)
 
 ## 💻 Projeto
 
