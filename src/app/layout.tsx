@@ -16,7 +16,7 @@ const inter = Inter ({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://magnus-studio.vercel.app"),
+  metadataBase: new URL("https://marcosstudio.vercel.app"),
   title: "Marcos Studio",
   description: "Portfolio de Marcos Silva, desenvolvedor Front-End especializado em React, Next.js e TypeScript.",
 
