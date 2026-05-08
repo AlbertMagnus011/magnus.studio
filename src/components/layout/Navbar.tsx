@@ -6,14 +6,15 @@ import { Menu ,X ,User, Zap, Coffee, Mail } from "lucide-react";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
-
-export const Navbar = () => {
-    const navLinks = [
+   
+const navLinks = [
         {label:"Sobre Mim", href: "#about", icon: User, rotate: "-rotate-1"},
         {label:"Skills", href: "#skills", icon:Zap, rotate: "rotate-1"},
         {label:"Projetos", href: "#projects", icon:Coffee, rotate: "-rotate-1"},
         {label:"Fale Comigo", href: "#contact", icon:Mail, rotate: "rotate-1"}
     ]
+
+export const Navbar = () => {
 
     const [open, setOpen] = useState(false);
 

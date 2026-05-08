@@ -4,11 +4,6 @@ import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Toaster } from "sonner"
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 const cabinSketch = Cabin_Sketch({
   variable: "--font-cabin-sketch",
   subsets: ["latin"],
@@ -26,6 +21,22 @@ export const metadata: Metadata = {
 
   icons: {
     icon: "/logo/favicon.png"
+  },
+  keywords: ["Front-End Developer","React","Next.js","TypeScript",
+  "Tailwind CSS","Portfolio","UI Design","Figma","Web Development"],
+
+  openGraph: {
+    title: "Marcos Studio",
+    description: "Portfolio de Marcos Silva, desenvolvedor Front-End especializado em React, Next.js e TypeScript.",
+    type:"website",
+    images: [{url: "/og-image.png", width: 1200, height: 630, alt:"Marcos Studio"}]
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Marcos Studio",
+    description: "Portfolio de Marcos Silva, desenvolvedor Front-End especializado em React, Next.js e TypeScript.",
+    images: [{ url: "/og-image.png", alt:"Marcos Studio" }]
   }
 };
 
@@ -37,7 +48,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body
-        className={`${geistMono.variable} ${cabinSketch.variable} ${inter.variable} antialiased`}
+        className={`${cabinSketch.variable} ${inter.variable} antialiased`}
       >
         <Navbar/>
         {children}

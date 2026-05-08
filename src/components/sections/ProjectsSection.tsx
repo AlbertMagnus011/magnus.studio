@@ -42,11 +42,13 @@ export const ProjectsSection = () => {
             <div className="flex gap-4 text-sm">
               {project.links.deploy &&
               <Reveal>
-                <a className="text-[#392a35] bg-[#29ffc9] rounded-4xl py-3 px-5 transition-transform hover:duration-300 hover:scale-105" href={project.links.deploy} target="_blank">Deploy</a>
+                <a className="text-[#392a35] bg-[#29ffc9] rounded-4xl py-3 px-5 transition-transform hover:duration-300 hover:scale-105" href={project.links.deploy} target="_blank" 
+                rel="noopener noreferrer">Deploy</a>
               </Reveal>}
           {project.links.repository &&
                 <Reveal>
-                  <a className="text-[#392a35] bg-transparent rounded-4xl border-2 py-3 px-5 transition-transform hover:duration-300 hover:scale-105" href={project.links.repository} target="_blank">Github</a>
+                  <a className="text-[#392a35] bg-transparent rounded-4xl border-2 py-3 px-5 transition-transform hover:duration-300 hover:scale-105" href={project.links.repository} 
+                  target="_blank" rel="noopener noreferrer">Github</a>
                 </Reveal>}
                 </div>
           </article>

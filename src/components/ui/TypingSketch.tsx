@@ -9,8 +9,8 @@ export const TypingSketch = () =>{
     return(
         <h1 className="font-cabin font-bold text-5xl leading-tight text-[#392a35] flex flex-wrap">
             {text.split("").map((letter, index) => (
-                <motion.span key={index} initial= {{opacity:0, y: 10, filter: "blue(3px)"}}
-                animate={{opacity:1, y:0, filter: "bluer(0px)"}}
+                <motion.span key={index} initial= {{opacity:0, y: 10, filter: "blur(3px)"}}
+                animate={{opacity:1, y:0, filter: "blur(0px)"}}
                 transition={{delay: index * 0.06, duration: .35, ease: "easeOut"}}
                 className={index >=14 ? "text-[#fcff0d]" : ""}>
                     {letter === " " ? "\u00A0" : letter}

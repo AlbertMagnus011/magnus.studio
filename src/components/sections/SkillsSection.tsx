@@ -13,16 +13,16 @@ export const SkillsSection = () => {
 
           <div className="grid grid-cols-3 gap-5">
             {skills.map((skill, index) => (
-              <Reveal key={skill.id} delay={index * 0.08} className="w-full">
-                <button
-                  className={`group relative flex min-h-32.5 w-full flex-col items-center justify-center gap-3 rounded-sm border-2 border-[#392a35]/20 bg-[#ffe66d] p-5 
+              <Reveal key={skill.id} delay={index * 0.08} className="text-center">
+                <div
+                  className={`group relative flex min-h-32.5 h-full flex-col items-center justify-center gap-3 rounded-sm border-2 border-[#392a35]/20 bg-[#ffe66d] p-5 
                   shadow-[4px_4px_0px_rgba(57,42,53,0.18)] transition-all duration-300 cursor-pointer hover:-translate-y-2 hover:rotate-0 hover:shadow-[8px_8px_0px_rgba(57,42,53,0.18)]
                   ${skill.rotate}`}>
                   <Image src={skill.icon} alt={skill.label} width={56} height={56} className="transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6"/>
                   <p className="hidden lg:block text-sm font-bold text-[#392a35]">
                     {skill.label}
                   </p>
-                </button>
+                </div>
               </Reveal>
             ))}
           </div>
@@ -58,7 +58,6 @@ export const SkillsSection = () => {
               </div>
             </Reveal>
           </div>
-
         </div>
       </div>
     </section>

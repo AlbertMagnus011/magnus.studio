@@ -33,7 +33,7 @@ export const Footer = () => {
                     </Reveal>
                 </div>
                 <div className="md:basis-2/7 flex mt-6 md:mt-0 justify-center md:justify-end">
-                    <button onClick={scrollToTop}>
+                    <button onClick={scrollToTop} aria-label="Voltar ao topo">
                         <Reveal delay={0.2} from="right">
                             <MotionImage src={arrow} alt="Voltar ao topo" className="w-16 h-16 cursor-pointer"
                             animate={{ y: [0, -12, 0],}}
