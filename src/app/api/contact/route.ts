@@ -17,7 +17,7 @@ export async function POST(req: Request) {
         }
 
         const { name, email, message } = parsed.data;
-        resend.emails.send({
+        await resend.emails.send({
             from: 'Magnus Studio <onboarding@resend.dev>',
             to: 'contato.marcosssilva.dev@gmail.com',
             subject: `Contato portfolio - ${name}`,
@@ -34,7 +34,9 @@ export async function POST(req: Request) {
         return Response.json({
         success: true,
         });
-    } catch {
+    } catch(error) {
+        console.error(error);
+
         return Response.json(
             { error: "Erro interno" },
             { status: 500 }
