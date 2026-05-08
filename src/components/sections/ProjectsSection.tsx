@@ -39,7 +39,7 @@ export const ProjectsSection = () => {
                 </Reveal>
               ))}
             </div>
-            <div className="flex gap-4 text-sm">
+            <div className="flex gap-4 text-sm mt-4 mb-2">
               {project.links.deploy &&
               <Reveal>
                 <a className="text-[#392a35] bg-[#29ffc9] rounded-4xl py-3 px-5 transition-transform hover:duration-300 hover:scale-105" href={project.links.deploy} target="_blank" 

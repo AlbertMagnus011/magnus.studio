@@ -18,7 +18,7 @@ export const contacts:Contact[] = [
             link:"https://api.whatsapp.com/send/?phone=5511992603947&text&type=phone_number&app_absent=0",rotate:"-rotate-2",
         },
         {
-            id:1, label:"Github",icon:githubIcon, username:"AlbertMagnus011",
+            id:1, label:"GitHub",icon:githubIcon, username:"AlbertMagnus011",
             link:"https://github.com/AlbertMagnus011", rotate:"rotate-2"
         },
         {

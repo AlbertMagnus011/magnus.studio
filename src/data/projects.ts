@@ -27,7 +27,7 @@ export const projects:Project[] = [
         id: 0,
         name: "B7Pizza",
         description: "Essa página foi desenvolvida no curso B7WEB Fullstack para aprimorar habilidades com Javascript este módulo do curso tinha o objetivo de colocar em prática conceitos de Javascript",
-        skills: [skills[4]],
+        skills: [skills[4], skills[6], skills[7]],
         image: pizzaImage,
         icon: pizzaIcon,
         links: {

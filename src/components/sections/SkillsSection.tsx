@@ -9,7 +9,7 @@ export const SkillsSection = () => {
   return (
     <section id="skills" className={`w-full bg-[#f6fff6]  ${backgroundPatterns.lined}`}>
       <div className="container mx-auto p-8 lg:p-16">
-        <div className="grid grid-cols-1 items-center gap-14 lg:grid-cols-3">
+        <div className="grid grid-cols-1 items-center gap-14 lg:grid-cols-2 xl:grid-cols-3">
 
           <div className="grid grid-cols-3 gap-5">
             {skills.map((skill, index) => (
@@ -40,9 +40,9 @@ export const SkillsSection = () => {
             </Reveal>
             <Reveal>
               <p className="text-lg leading-relaxed text-[#392a35]/80">
-                Tenho desenvolvido projetos completos utilizando{" "}
+                Desenvolvimento moderno de projetos completos utilizando{" "}
                 <span className="font-semibold text-[#29ffc9]">
-                  React, Next, Typescript e Tailwind
+                  React, Next.js, TypeScript, Tailwind CSS e ferramentas como Figma, Git e GitHub.
                 </span>,
                 sempre buscando interfaces bonitas, responsivas e com boa
                 experiência de uso.
@@ -50,7 +50,7 @@ export const SkillsSection = () => {
             </Reveal>
           </div>
 
-          <div className="flex justify-center lg:justify-end">
+          <div className="flex justify-center lg:col-span-2 xl:col-span-1 lg:justify-center ">
             <Reveal from="right">
               <div
                 className="rotate-2 rounded-4xl border-2 border-[#392a35] bg-white/40 p-4 shadow-xl">
