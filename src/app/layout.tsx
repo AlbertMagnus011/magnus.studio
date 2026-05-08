@@ -1,5 +1,5 @@
-import type { Metadata } from "next";
-import { Geist_Mono, Cabin_Sketch, Inter } from "next/font/google";
+import type { Metadata, Viewport } from "next";
+import { Cabin_Sketch, Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Toaster } from "sonner"
@@ -39,6 +39,11 @@ export const metadata: Metadata = {
     description: "Portfolio de Marcos Silva, desenvolvedor Front-End especializado em React, Next.js e TypeScript.",
     images: [{ url: "/og-image.png", alt:"Marcos Studio" }]
   }
+};
+
+export const viewport: Viewport = {
+  themeColor: "#f6fff6",
+  colorScheme: "light",
 };
 
 export default function RootLayout({

@@ -40,7 +40,7 @@ export const ContactSection = () => {
     }
 
     return(
-        <section id="contact" className={`w-full bg-[#313145] ${backgroundPatterns.dottedLight}`}>
+        <section id="contact" className={`w-full bg-[#313145] ${backgroundPatterns.dottedLight} text-[#fff8d6]`}>
             <div className="container mx-auto grid grid-cols-1 p-8 md:p-16 lg:grid-cols-2">
                 <address className="flex flex-col items-center gap-4">
                     <div>

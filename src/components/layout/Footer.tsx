@@ -17,7 +17,7 @@ export const Footer = () => {
         })
     }
     return(
-        <footer className="w-full">
+        <footer className="w-full bg-[#080808] text-[#fff8d6]">
             <div className="container mx-auto flex flex-col md:flex-row md:items-center py-8 md:py-14 ">
                 <Link href={"/"} className="flex justify-center md:justify-start items-center gap-4 md:basis-2/7">
                     <Reveal from="left">

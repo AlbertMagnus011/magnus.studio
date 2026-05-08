@@ -41,7 +41,7 @@ export const SkillsSection = () => {
             <Reveal>
               <p className="text-lg leading-relaxed text-[#392a35]/80">
                 Desenvolvimento moderno de projetos completos utilizando{" "}
-                <span className="font-semibold text-[#29ffc9]">
+                <span className="font-semibold text-[#292ff9]">
                   React, Next.js, TypeScript, Tailwind CSS e ferramentas como Figma, Git e GitHub.
                 </span>,
                 sempre buscando interfaces bonitas, responsivas e com boa
